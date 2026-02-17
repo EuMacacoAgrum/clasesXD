@@ -13,13 +13,13 @@
         <button onclick="ejercicio2()">2</button>
         <button onclick="ejercicio3('noce')">3</button>
         <button onclick="ejercicio4()">4</button>
-        <button onclick="ejercicio5()">5</button>
+        <button onclick="ejercicio5()">5</button> 
         <button onclick="ejercicio6()">6</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>10</button>
-        <button>11</button>
+        <button onclick="ejercicio7()">7</button>
+        <button onclick="ejercicio8()">8</button>
+        <button onclick="ejercicio9()">9</button>
+        <button onclick="ejercicio10()">10</button>
+        <button onclick="ejercicio11()">11</button>
         <button>12</button>
         <button>13</button>
         <button>14</button>
@@ -35,7 +35,7 @@
     </header>
     <main>
         <div>
-            <img src="https://preview.redd.it/q65lyhtym5o61.png?width=640&crop=smart&auto=webp&s=7402d532c595ea3c4d3c404bed13a0a477f3d467"> 
+            <img src="https://preview.redd.it/q65lyhtym5o61.png?width=640&crop=smart&auto=webp&s=7402d532c595ea3c4d3c404bed13a0a477f3d467" height = "600" > 
         </div>
         <div>
             <a href="https://youtu.be/dQw4w9WgXcQ?si=pxksunrjE_ehXDVK">Diamantes gratis en el free</a>
@@ -111,6 +111,97 @@
                 resultado3 = numero5 + numero6;
                 alert("el resultado es "+ resultado3);
         }}
+        function ejercicio7(){
+            let diasemana;
+            diasemana = prompt("que dia de la semana es hoy");
+            switch (diasemana){
+                case "lunes":
+                    alert("hoy es lunes");
+                    break;
+                case "martes":
+                    alert("hoy es martes");
+                    break;
+                case "miercoles":
+                    alert("hoy es miercoles");
+                    break;
+                case "jueves":
+                    alert("hoy es jueves");
+                    break;
+                case "viernes":
+                    alert("hoy es viernes");
+                    break;
+                case "sabado":
+                    alert("hoy es sabado");
+                    break;
+                case "domingo":
+                    alert("hoy es domingo");
+                    break;
+                default:
+                    alert("lo has puesto mal, pon un dia de la semana");
+                    break;
+            }
+        }
+        function ejercicio8(){
+            let diasemana1;
+            diasemana1 = prompt("que dia de la semana es hoy");
+            diasemana1 = diasemana1.toLocaleLowerCase();
+            switch (diasemana1){
+                case "lunes":
+                    alert("hoy es lunes");
+                    break;
+                case "martes":
+                    alert("hoy es martes");
+                    break;
+                case "miercoles":
+                    alert("hoy es miercoles");
+                    break;
+                case "miércoles":
+                    alert("hoy es miercoles");
+                    break;
+                case "jueves":
+                    alert("hoy es jueves");
+                    break;
+                case "viernes":
+                    alert("hoy es viernes");
+                    break;
+                case "sabado":
+                    alert("hoy es sabado");
+                    break;
+                case "sábado":
+                    alert("hoy es sabado");
+                    break;
+                case "domingo":
+                    alert("hoy es domingo");
+                    break;
+                default:
+                    alert("lo has puesto mal, pon un dia de la semana");
+                    break;
+            }
+        }
+        function ejercicio9(){
+            for (let numerito = 1; numerito < 11; numerito++){
+                alert(numerito);
+            }
+        }
+        function ejercicio10(){
+            multi = prompt("Elije un numero");
+            if(!isNaN(multi)){
+                for (let i = 1; i <= 10; i++){
+                    alert(multi + " x " + i + " = " + multi * i);
+                }
+            }else{
+                alert("no estás introduciendo un número")
+            }
+        }
+        function ejercicio11(){
+            let frutas = ["melon", "pera", "tomate"];
+            for (let j = 0; j < frutas.length ; j++){
+                alert(frutas[j]);
+            }
+        }
+        function ejercicio12(){
+            let
+        }
     </script>
 </body>
 </html>
