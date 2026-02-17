@@ -20,8 +20,8 @@
         <button onclick="ejercicio9()">9</button>
         <button onclick="ejercicio10()">10</button>
         <button onclick="ejercicio11()">11</button>
-        <button>12</button>
-        <button>13</button>
+        <button onclick="ejercicio12()">12</button>
+        <button onclick="ejercicio13()">13</button>
         <button>14</button>
         <button>15</button>
         <button>16</button>
@@ -200,7 +200,30 @@
             }
         }
         function ejercicio12(){
-            let
+            for (let atras = 10; atras >= 0; atras--){
+                alert(atras);
+            }
+            alert("KABOM KABOM");
+        }
+
+//13- pedid un número al usuario, y debéis de enseñar la suma total de todos los números pares desde
+//el 0 hasta el número introducido por el usuario. 
+
+//El 13 si se os hace muy difícil hacedlo solo la suma total de los números pares del 0 al 10. 
+//Pero al menos intentad la versión chunga
+
+//aun sin terminar, solo lo empezé// 
+        function ejercicio13(){
+            let elejido
+            let paresarray = []
+            elejido = prompt("Elije un número")
+            if(!isNaN(elejido)){
+                for(let pares = 0; pares <= elejido; pares + 2){
+                   
+                }
+            }else{
+                alert("No estás introduciendo un número")
+            }
         }
     </script>
 </body>
