@@ -205,25 +205,13 @@
             }
             alert("KABOM KABOM");
         }
-
-//13- pedid un número al usuario, y debéis de enseñar la suma total de todos los números pares desde
-//el 0 hasta el número introducido por el usuario. 
-
-//El 13 si se os hace muy difícil hacedlo solo la suma total de los números pares del 0 al 10. 
-//Pero al menos intentad la versión chunga
-
-//aun sin terminar, solo lo empezé// 
         function ejercicio13(){
-            let elejido
-            let paresarray = []
-            elejido = prompt("Elije un número")
-            if(!isNaN(elejido)){
-                for(let pares = 0; pares <= elejido; pares + 2){
-                   
-                }
-            }else{
-                alert("No estás introduciendo un número")
+            let elegido = prompt("elige un número");
+            let total = 0;
+            for(let pares = 0; pares <= elegido; pares+=2){
+                total +=pares;
             }
+            alert(total);
         }
     </script>
 </body>
