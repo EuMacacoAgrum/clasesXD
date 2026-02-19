@@ -22,8 +22,8 @@
         <button onclick="ejercicio11()">11</button>
         <button onclick="ejercicio12()">12</button>
         <button onclick="ejercicio13()">13</button>
-        <button>14</button>
-        <button>15</button>
+        <button onclick="ejercicio14()">14</button>
+        <button onclick="ejercicio15()">15</button>
         <button>16</button>
         <button>17</button>
         <button>18</button>
@@ -208,10 +208,50 @@
         function ejercicio13(){
             let elegido = prompt("elige un número");
             let total = 0;
-            for(let pares = 0; pares <= elegido; pares+=2){
-                total +=pares;
+            for(let pares = 0; pares <= elegido; pares++){
+                if (pares %2 === 0){
+                    total += pares
+                }
             }
-            alert(total);
+            alert("la suma de todos los numeros pares hasta " + elegido + " es " + total);
+        }
+        function ejercicio14(){
+            let total1 = 0;
+            let elegido1 = prompt("elige un número");
+            elegido1 = parseInt(elegido1);
+             if (isNaN(elegido1)==true){
+                alert("el valor no es un número");
+            }else{
+                for(let pares1 = 0; pares1 <= elegido1; pares1++){
+                    if (pares1 %2 == 0){
+                        total1 += pares1;
+                  }
+                }
+                alert("la suma de todos los numeros pares hasta " + elegido1 + " es " + total);
+            }
+        }
+        function ejercicioLucas() {
+            let parImpar = prompt("Pon un número");
+            parImpar = parseInt(parImpar);
+            let suma = 0;
+            if (isNaN(parImpar) == true) {
+                alert("Pon números");
+            } else {
+                for (let zeroToPrompt = 0; zeroToPrompt <= parImpar; zeroToPrompt++) {
+                    if (zeroToPrompt % 2 === 0) {
+                        suma += zeroToPrompt;
+                    }
+                }
+                alert("La suma de todos los numeros pares entre " + "0" + " y " + parImpar + " es " + suma);
+            }
+        }
+        //pasar por argumento un num del 1 al 10 y se tiene que repetir el bucle infinitamente hasta que el usuario acierte
+        //
+        function ejercicio15(){
+            let random = Math.floor(Math.random()*11)
+            while (random == 5){
+                alert(random)
+            }
         }
     </script>
 </body>
